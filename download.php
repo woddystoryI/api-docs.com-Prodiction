@@ -378,9 +378,9 @@ $(window).resize(function(){
               <li class="active"><a href="download.php?lang=pt"><img src="images/flags/portuguese.png" alt=""> Portuguese</a></li>
 			  			  
 			  <li class="disabled"><a href="download.php?lang=ko"><img src="images/flags/korean.png" alt=""> Korean</a></li>
-              <li class="disabled"><a href="#"><img src="images/flags/german.png" alt=""> German</a></li>
+			  <li class="disabled"><a href="download.php?lang=cn"><img src="images/flags/china.png" alt=""> Chinese</a></li>
+			  <li class="disabled"><a href="#"><img src="images/flags/german.png" alt=""> German</a></li>
               <li class="disabled"><a href="#"><img src="images/flags/dutch.png" alt=""> Dutch</a></li>
-              <li class="disabled"><a href="#"><img src="images/flags/china.png" alt=""> Chinese</a></li>
             </ul>
           </li>
 
@@ -466,7 +466,7 @@ $(window).resize(function(){
 
 
 					<div class="" style="padding: 16px 0px 19px 11px;float:right;width: 170px;margin: 19px 13px 0px 0px;border-left: 1px solid rgb(223, 223, 223);">
-								<a target="_blank"  href="https://bitbucket.org/Klokje/public-klokjes-bol-scripts/raw/ec830facccefb3b52212dba5696c08697c3c2854/Test/Prodiction/Prodiction.lua" style="height: 45px;float: right;width: 100%;margin-bottom: 3px;" type="button" class="btn btn-success"><i class="icon-file-download"></i><?php echo $lang['DOWNLOAD_C_DOWNLOAD']; ?></a>
+								<a target="_blank"  href="https://bitbucket.org/Klokje/public-klokjes-bol-scripts/raw/ec830facccefb3b52212dba5696c08697c3c2854/Test/Prodiction/Prodiction.lua" style="height: 45px;float: right;width: 100%;margin-bottom: 3px;" type="button" class="btn btn-success"><i class="icon-file-download"></i><?php echo $lang['DOWNLOAD_DOWNLOAD']; ?></a>
 
 						</div>
 						<div class="" style="padding-left: 10px!important;margin-bottom: 12px;float:left;width: 100%;margin-top: 9px;padding-right: 10px;border-top: 1px solid rgb(221, 221, 221);padding-top: 12px;">
@@ -514,7 +514,7 @@ $(window).resize(function(){
 
 
 					<div class="" style="padding: 16px 0px 19px 11px;float:right;width: 170px;margin: 19px 13px 0px 0px;border-left: 1px solid rgb(223, 223, 223);">
-								<a target="_blank"  href="https://bitbucket.org/Klokje/public-klokjes-bol-scripts/raw/60afb173f12273e68b1cb09003c105eb22d870e6/Test/Prodiction/Prodiction.lua" style="height: 45px;float: right;width: 100%;margin-bottom: 3px;" type="button" class="btn btn-success"><i class="icon-file-download"></i> <?php echo $lang['DOWNLOAD_C_DOWNLOAD']; ?></a>
+								<a target="_blank"  href="https://bitbucket.org/Klokje/public-klokjes-bol-scripts/raw/60afb173f12273e68b1cb09003c105eb22d870e6/Test/Prodiction/Prodiction.lua" style="height: 45px;float: right;width: 100%;margin-bottom: 3px;" type="button" class="btn btn-success"><i class="icon-file-download"></i> <?php echo $lang['DOWNLOAD_DOWNLOAD']; ?></a>
 
 						</div>
 						<div class="" style="padding-left: 10px!important;margin-bottom: 12px;float:left;width: 100%;margin-top: 9px;padding-right: 10px;border-top: 1px solid rgb(221, 221, 221);padding-top: 12px;">
@@ -564,7 +564,7 @@ $(window).resize(function(){
 
 
 					<div class="" style="padding: 16px 0px 19px 11px;float:right;width: 170px;margin: 19px 13px 0px 0px;border-left: 1px solid rgb(223, 223, 223);">
-								<a target="_blank"  href="https://bitbucket.org/Klokje/public-klokjes-bol-scripts/raw/aef4be4e92a5b1ba70154752c49e4978e7178dd4/Test/Prodiction/Prodiction.lua" style="height: 45px;float: right;width: 100%;margin-bottom: 3px;" type="button" class="btn btn-success"><i class="icon-file-download"></i> <?php echo $lang['DOWNLOAD_C_DOWNLOAD']; ?></a>
+								<a target="_blank"  href="https://bitbucket.org/Klokje/public-klokjes-bol-scripts/raw/aef4be4e92a5b1ba70154752c49e4978e7178dd4/Test/Prodiction/Prodiction.lua" style="height: 45px;float: right;width: 100%;margin-bottom: 3px;" type="button" class="btn btn-success"><i class="icon-file-download"></i> <?php echo $lang['DOWNLOAD_DOWNLOAD']; ?></a>
 
 						</div>
 						<div class="" style="padding-left: 10px!important;margin-bottom: 12px;float:left;width: 100%;margin-top: 9px;padding-right: 10px;border-top: 1px solid rgb(221, 221, 221);padding-top: 12px;">
@@ -613,7 +613,7 @@ $(window).resize(function(){
 
 
 					<div class="" style="padding: 16px 0px 19px 11px;float:right;width: 170px;margin: 19px 13px 0px 0px;border-left: 1px solid rgb(223, 223, 223);">
-								<a target="_blank"  href="https://bitbucket.org/Klokje/public-klokjes-bol-scripts/raw/b3d142897814a97973071c0a26aab5bb63d6d014/Test/Prodiction/Prodiction.lua" style="height: 45px;float: right;width: 100%;margin-bottom: 3px;" type="button" class="btn btn-success"><i class="icon-file-download"></i> <?php echo $lang['DOWNLOAD_C_DOWNLOAD']; ?></a>
+								<a target="_blank"  href="https://bitbucket.org/Klokje/public-klokjes-bol-scripts/raw/b3d142897814a97973071c0a26aab5bb63d6d014/Test/Prodiction/Prodiction.lua" style="height: 45px;float: right;width: 100%;margin-bottom: 3px;" type="button" class="btn btn-success"><i class="icon-file-download"></i> <?php echo $lang['DOWNLOAD_DOWNLOAD']; ?></a>
 
 						</div>
 						<div class="" style="padding-left: 10px!important;margin-bottom: 12px;float:left;width: 100%;margin-top: 9px;padding-right: 10px;border-top: 1px solid rgb(221, 221, 221);padding-top: 12px;">
@@ -667,7 +667,7 @@ $(window).resize(function(){
 
 
 					<div class="" style="padding: 16px 0px 19px 11px;float:right;width: 170px;margin: 19px 13px 0px 0px;border-left: 1px solid rgb(223, 223, 223);">
-								<a target="_blank"  href="https://bitbucket.org/Klokje/public-klokjes-bol-scripts/raw/1467bf108b116274f8763693b00b7d977faf7735/Test/Prodiction/Prodiction.lua" style="height: 45px;float: right;width: 100%;margin-bottom: 3px;" type="button" class="btn btn-success"><i class="icon-file-download"></i> <?php echo $lang['DOWNLOAD_C_DOWNLOAD']; ?></a>
+								<a target="_blank"  href="https://bitbucket.org/Klokje/public-klokjes-bol-scripts/raw/1467bf108b116274f8763693b00b7d977faf7735/Test/Prodiction/Prodiction.lua" style="height: 45px;float: right;width: 100%;margin-bottom: 3px;" type="button" class="btn btn-success"><i class="icon-file-download"></i> <?php echo $lang['DOWNLOAD_DOWNLOAD']; ?></a>
 
 						</div>
 						<div class="" style="padding-left: 10px!important;margin-bottom: 12px;float:left;width: 100%;margin-top: 9px;padding-right: 10px;border-top: 1px solid rgb(221, 221, 221);padding-top: 12px;">
@@ -715,7 +715,7 @@ $(window).resize(function(){
 
 
 					<div class="" style="padding: 16px 0px 19px 11px;float:right;width: 170px;margin: 19px 13px 0px 0px;border-left: 1px solid rgb(223, 223, 223);">
-								<a href="https://bitbucket.org/Klokje/public-klokjes-bol-scripts/raw/cec20f93a18c6a32670d3f1a5b2ffeab93db14f3/Common/Prodiction.lua" style="height: 45px;float: right;width: 100%;margin-bottom: 3px;" type="button" class="btn btn-success"><i class="icon-file-download"></i> <?php echo $lang['DOWNLOAD_C_DOWNLOAD']; ?></a>
+								<a href="https://bitbucket.org/Klokje/public-klokjes-bol-scripts/raw/cec20f93a18c6a32670d3f1a5b2ffeab93db14f3/Common/Prodiction.lua" style="height: 45px;float: right;width: 100%;margin-bottom: 3px;" type="button" class="btn btn-success"><i class="icon-file-download"></i> <?php echo $lang['DOWNLOAD_DOWNLOAD']; ?></a>
 
 						</div>
                   </div>

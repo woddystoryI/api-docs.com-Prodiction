@@ -53,6 +53,7 @@ $lang['BUG_SUBMIT_REPORT'] = 'Submeter relatório';
 
 $lang['FAQ_FAQ'] = 'FAQ';
 $lang['FAQ_ERROR'] = 'Erro';
+$lang['FAQ_UPDATE'] = 'Esta pagina será atualizada brevemente.';
 $lang['FAQ_QUESTION_1'] = '1. O que é Prodiction?';
 $lang['FAQ_ANSWER_1'] = 'Prodiction é uma biblioteca, que consegue prever a posição baseado na informação de magia/tempo. Os scripts que desejem implementar isto, irão precisar desta biblioteca.';
 $lang['FAQ_QUESTION_2'] = '2. Encontra-se livre de erros ou já está pronta?';
@@ -123,7 +124,81 @@ $lang['DOWNLOAD_QUESTIONS3'] = 'para nos enviares uma mensagem.';
 			// 4.3.1 Version 1.3
 			$lang['DOWNLOAD_O_LINE1_1.3'] = 'Corrigido erro para os utilizadores não pagantes, não conseguiam usar.';
 			$lang['DOWNLOAD_O_LINE2_1.3'] = 'Algumas melhorias no código.';
-			$lang['DOWNLOAD_RELEASE_1.3'] = 'Data lançamento: 08/07/2014'		
+			$lang['DOWNLOAD_RELEASE_1.3'] = 'Data lançamento: 08/07/2014';
 			
-		//$lang[''] =
+// 5.Download Nighty
+
+$lang['DOWNLOADN_DOWNLOAD'] = 'Baixar';
+$lang['DOWNLOADN_CHANGELOG'] = 'Relatorio de Atualizações';
+$lang['DOWNLOADN_KNOWN_ISSUES'] = 'Problemas conhecidos:';
+$lang['DOWNLOADN_VERSION'] = 'Versão:';
+$lang['DOWNLOADN_REPORT_BUG'] = 'Reportar erro';
+$lang['DOWNLOADN_QUESTIONS1'] = 'Se tens alguma questão em relação a esta versão ou queres reportar um erro clica';
+$lang['DOWNLOADN_QUESTIONS2'] = 'aqui';
+$lang['DOWNLOADN_QUESTIONS3'] = 'para nos enviares uma mensagem.';
+
+		// 5.1.Upcomming Updates
+
+		$lang['DOWNLOADN_UPCOMMING_UPDATES'] = 'Proximas Atualizações';
+		$lang['DOWNLOADN_FEATURES'] = 'Características proxima versão';
+		$lang['DOWNLOADN_TO_DO'] = 'Lista de a fazeres';
+		$lang['DOWNLOADN_U_LINE_1'] = 'Adicionar a Parede de Vento do Yasuo a Collision.';
+		$lang['DOWNLOADN_U_LINE_2'] = 'Adicionar melhores calculos de imunidade, para que os skillshots sejam usados no momento certo em que o alvo deixa de estar imune.';
+		$lang['DOWNLOADN_U_LINE_3'] = 'Pequena melhoria no algoritmo para os utilizadores não pagantes.';
+		$lang['DOWNLOADN_U_LINE_4'] = 'Para os utilizadores - Adicionar um menu de delay para se poder aumentar ou diminuir consoante o gosto.';
+		$lang['DOWNLOADN_U_TO_DO'] = 'Ainda não existe lista de a fazeres';
+		$lang['DOWNLOADN_U_SUGESTION'] = 'Sugestão';
+		
+		// 5.2.Current Version
+
+		$lang['DOWNLOADN_CURRENT_VERSION'] = 'Versão Atual';
+		$lang['DOWNLOADN_C_LINE_1'] = 'Corrigido bugsplat em alguns scripts.';
+		$lang['DOWNLOADN_C_LINE_2'] = 'Podes desactivar o menu e o autoupdater no topo do ficheiro.';
+		$lang['DOWNLOADN_C_LINE_3'] = 'E uma pequena melhoria.';
+		$lang['DOWNLOADN_C_DOWNLOAD'] = 'Baixar';
+		$lang['DOWNLOADN_C_RELEASE_DATE'] = 'Data de lançamento: 09/07/2014';
+		
+		// 5.3.Old Versions
+		$lang['DOWNLOADN_OLD_VERSIONS'] = 'Versões Antigas';
+		$lang['DOWNLOADN_O_NO_ISSUES'] = 'Nenhum erro conhecido até agora';
+			
+			// 5.3.1 Version 1.0
+			$lang['DOWNLOADN_O_LINE1_1.0'] = 'Codigo reesctio.';
+			$lang['DOWNLOADN_O_LINE2_1.0'] = 'Adicionado 2 algoritmos';
+			$lang['DOWNLOADN_O_LINE3_1.0'] = 'Adicionada nova Class "Prodiction". Deverá tornar o uso da api o mais fácil possível.';
+			$lang['DOWNLOADN_O_LINE4_1.0'] = 'Corrigido um erro para o close range less casting, que deverá ser tão rápido quanto o long range.';
+			$lang['DOWNLOADN_O_LINE5_1.0'] = 'Este algoritmo já não é mais baseado no evento (event) OnNewWaypoint. Em vez disso irá calcular sempre a posição. Deverá ser muito mais rápido.';
+			$lang['DOWNLOADN_O_LINE6_1.0'] = 'Melhor documentação.';
+			$lang['DOWNLOADN_O_LINE7_1.0'] = 'Adicionado control da parede.';
+			$lang['DOWNLOADN_O_LINE8_1.0'] = 'Adicionado Colisão(Collision).';
+			$lang['DOWNLOADN_RELEASE_1.0'] = 'Data de lançamento : 01/06/2014';
+				
+			// 5.3.2 Version 1.1
+			$lang['DOWNLOADN_O_LINE1_1.1'] = 'Mesmo lançamento que o da versão gratuita. Ver as versões estaveis para mais informação.';
+			$lang['DOWNLOADN_O_LINE2_1.1'] = 'Extra Api para doadores';
+			$lang['DOWNLOADN_O_LINE3_1.1'] = '3 Algoritmos.';
+			$lang['DOWNLOADN_O_LINE4_1.1'] = 'Pequena melhoria no modo, para melhorar o overtime.';
+			$lang['DOWNLOADN_RELEASE_1.1'] = 'Data de lançamento: 16/06/2014';
+			
+			// 5.3.3 Version 1.1a
+			$lang['DOWNLOADN_O_LINE1_1.1a'] = 'Erro corrigido. Atualizado na versão gratuita também.';
+			$lang['DOWNLOADN_O_LINE2_1.1a'] = 'Corrigido erro na prediction da parede.';
+			$lang['DOWNLOADN_O_LINE3_1.1a'] = 'Corrigido o erro NaN.';
+			$lang['DOWNLOADN_RELEASE_1.1a'] = 'Data Lançamento: 16/06/2014';
+			
+			// 5.3.4 Version 1.2	
+			$lang['DOWNLOADN_O_LINE1_1.2'] = 'Atualizado para o novo patch.';
+			$lang['DOWNLOADN_O_LINE2_1.2'] = 'Corrigido erro na função GetPrediction, retorna sempre pos.';
+			$lang['DOWNLOADN_O_LINE3_1.2'] = 'Resolvido erro na Collision (Espero eu).';
+			$lang['DOWNLOADN_O_LINE4_1.2'] = 'Mudança no código interno.';
+			$lang['DOWNLOADN_O_LINE5_1.2'] = 'Modificador dinamico do cabeçalho dos pacotes.';
+			$lang['DOWNLOADN_RELEASE_1.2'] = 'Data lançamento: 07/07/2014';
+			
+			// 5.3.1 Version 1.3
+			$lang['DOWNLOADN_O_LINE1_1.3'] = 'Corrigido erro para os utilizadores não pagantes, não conseguiam usar.';
+			$lang['DOWNLOADN_O_LINE2_1.3'] = 'Algumas melhorias no código.';
+			$lang['DOWNLOADN_RELEASE_1.3'] = 'Data lançamento: 08/07/2014'			
+			
+			
+//$lang[''] =
 ?>

@@ -378,9 +378,9 @@ $(window).resize(function(){
               <li class="active"><a href="faq.php?lang=pt"><img src="images/flags/portuguese.png" alt=""> Portuguese</a></li>
 			  			  
 			  <li class="disabled"><a href="faq.php?lang=ko"><img src="images/flags/korean.png" alt=""> Korean</a></li>
-              <li class="disabled"><a href="#"><img src="images/flags/german.png" alt=""> German</a></li>
+			  <li class="disabled"><a href="faq.php?lang=cn"><img src="images/flags/china.png" alt=""> Chinese</a></li>
+			  <li class="disabled"><a href="#"><img src="images/flags/german.png" alt=""> German</a></li>
               <li class="disabled"><a href="#"><img src="images/flags/dutch.png" alt=""> Dutch</a></li>
-              <li class="disabled"><a href="#"><img src="images/flags/china.png" alt=""> Chinese</a></li>
             </ul>
           </li>
 
@@ -398,7 +398,7 @@ $(window).resize(function(){
 				<div class="callout callout-danger fade in">
 				<button type="button" class="close" data-dismiss="alert">×</button>
 				<h5><?php echo $lang['FAQ_ERROR']; ?></h5>
-				<p>This page get update soon. </p>
+				<p><?php echo $lang['FAQ_UPDATE']; ?></p>
 			</div>
 			<!-- Question toggles group -->
 	        <div class="row">

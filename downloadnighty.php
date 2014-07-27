@@ -362,7 +362,7 @@ $(window).resize(function(){
 			<div class="breadcrumb-line breadcrumb-top">
 				<ul class="breadcrumb">
 					<li><a href="index.php"><?php echo $lang['MENU_HOME']; ?></a></li>
-					<li class="active">Download & Versions</li>
+					<li class="active"><?php echo $lang['MENU_DOWNLOAD_INSTALL']; ?></li>
 				</ul>
 
 				<div class="visible-xs breadcrumb-toggle">
@@ -374,10 +374,13 @@ $(window).resize(function(){
             <a href="#" class="dropdown-toggle" data-toggle="dropdown"><img src="images/flags/english.png" alt=""> <span>English</span> <b class="caret"></b></a>
             <ul class="dropdown-menu dropdown-menu-right icons-right">
               
-              <li class="active"><a href="#"><img src="images/flags/english.png" alt=""> English</a></li>
-              <li class="disabled"><a href="#"><img src="images/flags/german.png" alt=""> German</a></li>
+              <li class="active"><a href="downloadnighty.php?lang=en"><img src="images/flags/english.png" alt=""> English</a></li>
+              <li class="active"><a href="downloadnighty.php?lang=pt"><img src="images/flags/portuguese.png" alt=""> Portuguese</a></li>
+			  			  
+			  <li class="disabled"><a href="downloadnighty.php?lang=ko"><img src="images/flags/korean.png" alt=""> Korean</a></li>
+			  <li class="disabled"><a href="downloadnighty.php?lang=cn"><img src="images/flags/china.png" alt=""> Chinese</a></li>
+			  <li class="disabled"><a href="#"><img src="images/flags/german.png" alt=""> German</a></li>
               <li class="disabled"><a href="#"><img src="images/flags/dutch.png" alt=""> Dutch</a></li>
-              <li class="disabled"><a href="#"><img src="images/flags/china.png" alt=""> Chinese</a></li>
             </ul>
           </li>
 
@@ -387,43 +390,43 @@ $(window).resize(function(){
 			<!-- Page header -->
 			<div class="page-header">
 				<div class="page-title">
-					<h3><i class="icon-lightning"></i>Download </h3>
+					<h3><i class="icon-lightning"></i><?php echo $lang['DOWNLOADN_DOWNLOAD']; ?> </h3>
 				</div>
 
 				
 			</div>
 			
-			<h6><i class="icon-stats-up"></i> Upcomming Updates</h6>
+			<h6><i class="icon-stats-up"></i><?php echo $lang['DOWNLOADN_UPCOMMING_UPDATES'] ?></h6>
 				<div class="panel-group block2">
 				<div class="panel panel-default" style="border: 1px solid rgb(100, 149, 237);">
                   <div class="panel-heading" style="background-color: rgb(135, 206, 250);">
-                    <h6 class="panel-title panel-trigger"><a data-toggle="collapse" href="#question1" class="collapsed">Version: 1.4 Nighty </a></h6>
+                    <h6 class="panel-title panel-trigger"><a data-toggle="collapse" href="#question1" class="collapsed"><?php echo $lang['DOWNLOAD_VERSION']; ?> 1.4 Nighty </a></h6>
                   </div>
                   <div id="question1" class="panel-collapse collapse" style="height: 0px;">
 						<div class="panel-group" id="accordion-color" style="max-width: 675px;float: left;width: 100%;">
 						  <div class="tabbable">
 							<ul class="nav nav-tabs">
-							  <li class="active"><a href="#iconified-tab1" data-toggle="tab"><i class="icon-code"></i> Features next version</a></li>
-							  <li><a href="#iconified-tab2" data-toggle="tab"><i class="icon-notification"></i> To-Do List</a></li>
+							  <li class="active"><a href="#iconified-tab1" data-toggle="tab"><i class="icon-code"></i> <?php echo $lang['DOWNLOADN_FEATURES']; ?></a></li>
+							  <li><a href="#iconified-tab2" data-toggle="tab"><i class="icon-notification"></i> <?php echo $lang['DOWNLOADN_TO_DO']; ?></a></li>
 							</ul>
 							<div class="tab-content with-padding">
 							  <div class="tab-pane fade in active" id="iconified-tab1">
 								<ul>
-								  <li>Add Yasuo shield to Collision.</li>
-								  <li>Add better immune calculation, so the skillshot will shoot on the right moment/timing, it will be underway to the target and hit. The moment the target stops being immune.</li>
-								  <li>Finetune the algorithm for free users a bit</li>
-								  <li>For users- Add custum delay menu to increase of decrease delay for their likings.</li>
+								  <li><?php echo $lang['DOWNLOADN_U_LINE_1']; ?></li>
+								  <li><?php echo $lang['DOWNLOADN_U_LINE_2']; ?></li>
+								  <li><?php echo $lang['DOWNLOADN_U_LINE_3']; ?></li>
+								  <li><?php echo $lang['DOWNLOADN_U_LINE_4']; ?></li>
 								</ul>
 							  </div>
 
 							  <div class="tab-pane fade" id="iconified-tab2">
-							  No To-Do List jet
+							  <?php echo $lang['DOWNLOADN_U_TO_DO']; ?>
 							  </div>
 							</div>
 						  </div>
 						</div>
 						<div class="" style="padding: 16px 0px 19px 11px;float:right;width: 170px;margin: 19px 13px 0px 0px;border-left: 1px solid rgb(223, 223, 223);">
-							<a href="bugreport.php" style="height: 34px;float: right;width: 100%;" type="button" class="btn btn-info"><i class="icon-wink"></i> Suggestion</a>
+							<a href="bugreport.php" style="height: 34px;float: right;width: 100%;" type="button" class="btn btn-info"><i class="icon-wink"></i> <?php echo $lang['DOWNLOADN_U_SUGESTION']; ?></a>
 					</div>
 					 <div class="" style="padding-left: 10px!important;margin-bottom: 0x;float:left;width: 100%;margin-top: 9px;padding-right: 10pxpadding-top: 12px;">
                   </div>
@@ -433,25 +436,25 @@ $(window).resize(function(){
                 </div>
 				</div>
 				<br><br>
-				<h6><i class="icon-stats-up"></i> Current Version</h6>
+				<h6><i class="icon-stats-up"></i> <?php echo $lang['DOWNLOADN_CURRENT_VERSION']; ?></h6>
 				<div class="panel-group block2">
 				<div class="panel panel-default" style="border: 1px solid rgb(26, 178, 50);">
                   <div class="panel-heading"  style="background-color: rgb(206, 235, 206);">
-                    <h6 class="panel-title panel-trigger active"><a data-toggle="collapse" href="#currentv" class="collapsed">Version: 1.4</a></h6>
+                    <h6 class="panel-title panel-trigger active"><a data-toggle="collapse" href="#currentv" class="collapsed"><?php echo $lang['DOWNLOADN_VERSION']; ?> 1.4</a></h6>
                   </div>
                   <div id="currentv" class="panel-collapse collapse in" style="height: auto;">
 							<div class="panel-group" id="accordion-color" style="max-width: 675px;float: left;width: 100%;margin-botton:9px">
 						  <div class="tabbable">
 							<ul class="nav nav-tabs">
-							  <li class="active"><a href="#iconified-tab1-c" data-toggle="tab"><i class="icon-code"></i> Changelog</a></li>
-							  <li><a href="#iconified-tab2-c" data-toggle="tab"><i class="icon-notification"></i> Known Issues</a></li>
+							  <li class="active"><a href="#iconified-tab1-c" data-toggle="tab"><i class="icon-code"></i> <?php echo $lang['DOWNLOADN_CHANGELOG']; ?></a></li>
+							  <li><a href="#iconified-tab2-c" data-toggle="tab"><i class="icon-notification"></i> <?php echo $lang['DOWNLOADN_KNOWN_ISSUES']; ?></a></li>
 							</ul>
 							<div class="tab-content with-padding">
 							  <div class="tab-pane fade in active" id="iconified-tab1-c">
 								  <ul>
-									 <li>Fixed bugsplat on some scripts.</li>
-								  <li>You can disable menu and autoupdater at top of the file.</li>
-								  <li>And a little finetune</li>
+									<li><?php echo $lang['DOWNLOADN_C_LINE_1']; ?></li>
+								  <li><?php echo $lang['DOWNLOADN_C_LINE_1']; ?></li>
+								  <li><?php echo $lang['DOWNLOADN_C_LINE_1']; ?></li>
 									</ul>
 							  </div>
 							  <div class="tab-pane fade" id="iconified-tab2-c">
@@ -463,15 +466,15 @@ $(window).resize(function(){
 
 
 					<div class="" style="padding: 16px 0px 19px 11px;float:right;width: 170px;margin: 19px 13px 0px 0px;border-left: 1px solid rgb(223, 223, 223);">
-								<a target="_blank"  href="https://bitbucket.org/Klokje/public-klokjes-bol-scripts/raw/ec830facccefb3b52212dba5696c08697c3c2854/Test/Prodiction/Prodiction.lua" style="height: 45px;float: right;width: 100%;margin-bottom: 3px;" type="button" class="btn btn-success"><i class="icon-file-download"></i> Download</a>
+								<a target="_blank"  href="https://bitbucket.org/Klokje/public-klokjes-bol-scripts/raw/ec830facccefb3b52212dba5696c08697c3c2854/Test/Prodiction/Prodiction.lua" style="height: 45px;float: right;width: 100%;margin-bottom: 3px;" type="button" class="btn btn-success"><i class="icon-file-download"></i> <?php echo $lang['DOWNLOADN_DOWNLOAD']; ?></a>
 
 						</div>
 						<div class="" style="padding-left: 10px!important;margin-bottom: 12px;float:left;width: 100%;margin-top: 9px;padding-right: 10px;border-top: 1px solid rgb(221, 221, 221);padding-top: 12px;">
                     <div style="text-align: center;padding: 10px;background-color: rgb(244, 248, 250);margin-bottom: 10px;">
-						<div><i class="icon-notification"></i> Release date: 09/07/2014 </div>
+						<div><i class="icon-notification"></i> <?php echo $lang['DOWNLOADN_C_RELEASE_DATE']; ?> </div>
 					</div>
 					<p class="alert alert-success fade in text-center">
-                        If you have any question regarding this version or want to report a bug click <a href="bugreport.php">here</a> to send us a message.
+                        <?php echo $lang['DOWNLOADN_QUESTIONS1']; ?><a href="bugreport.php"> <?php echo $lang['DOWNLOADN_QUESTIONS2']; ?> </a> <?php echo $lang['DOWNLOADN_QUESTIONS3']; ?>
 					</p>
 					
 					
@@ -482,24 +485,24 @@ $(window).resize(function(){
                 </div>
 				</div>
 				<br><br>
-				<h6><i class="icon-stats-up"></i> Old Versions</h6>
+				<h6><i class="icon-stats-up"></i> <?php echo $lang['DOWNLOADN_OLD_VERSIONS']; ?></h6>
 				<div class="panel-group block2">
 				<div class="panel panel-default" style="border: 1px solid rgb(178, 26, 26);">
                   <div class="panel-heading"  style="background-color: rgb(236, 200, 200);">
-                    <h6 class="panel-title panel-trigger"><a data-toggle="collapse" href="#old11" class="collapsed">Version: 1.3</a></h6>
+                    <h6 class="panel-title panel-trigger"><a data-toggle="collapse" href="#old11" class="collapsed"><?php echo $lang['DOWNLOADN_VERSION']; ?> 1.3</a></h6>
                   </div>
                   <div id="old11" class="panel-collapse collapse" style="height: 0px;">
 													<div class="panel-group" id="accordion-color" style="max-width: 675px;float: left;width: 100%;margin-botton:9px">
 						  <div class="tabbable">
 							<ul class="nav nav-tabs">
-							  <li class="active"><a href="#iconified-tab1-c11" data-toggle="tab"><i class="icon-code"></i> Changelog</a></li>
-							  <li><a href="#iconified-tab2-c11" data-toggle="tab"><i class="icon-notification"></i> Known Issues</a></li>
+							  <li class="active"><a href="#iconified-tab1-c11" data-toggle="tab"><i class="icon-code"></i> <?php echo $lang['DOWNLOADN_CHANGELOG']; ?></a></li>
+							  <li><a href="#iconified-tab2-c11" data-toggle="tab"><i class="icon-notification"></i> <?php echo $lang['DOWNLOADN_KNOWN_ISSUES']; ?></a></li>
 							</ul>
 							<div class="tab-content with-padding">
 							  <div class="tab-pane fade in active" id="iconified-tab1-c11">
 								  <ul>
-									<li>Fixed bug for free users, they coudnt use it.</li>
-									   <li>Some code finetunes.</li>
+									<li><?php echo $lang['DOWNLOADN_O_LINE1_1.3']; ?></li>
+									   <li><?php echo $lang['DOWNLOADN_O_LINE2_1.3']; ?></li>
 									</ul>
 							  </div>
 							  <div class="tab-pane fade" id="iconified-tab2-c11">
@@ -511,15 +514,15 @@ $(window).resize(function(){
 
 
 					<div class="" style="padding: 16px 0px 19px 11px;float:right;width: 170px;margin: 19px 13px 0px 0px;border-left: 1px solid rgb(223, 223, 223);">
-								<a target="_blank"  href="https://bitbucket.org/Klokje/public-klokjes-bol-scripts/raw/60afb173f12273e68b1cb09003c105eb22d870e6/Test/Prodiction/Prodiction.lua" style="height: 45px;float: right;width: 100%;margin-bottom: 3px;" type="button" class="btn btn-success"><i class="icon-file-download"></i> Download</a>
+								<a target="_blank"  href="https://bitbucket.org/Klokje/public-klokjes-bol-scripts/raw/60afb173f12273e68b1cb09003c105eb22d870e6/Test/Prodiction/Prodiction.lua" style="height: 45px;float: right;width: 100%;margin-bottom: 3px;" type="button" class="btn btn-success"><i class="icon-file-download"></i> <?php echo $lang['DOWNLOADN_DOWNLOAD']; ?></a>
 
 						</div>
 						<div class="" style="padding-left: 10px!important;margin-bottom: 12px;float:left;width: 100%;margin-top: 9px;padding-right: 10px;border-top: 1px solid rgb(221, 221, 221);padding-top: 12px;">
                     <div style="text-align: center;padding: 10px;background-color: rgb(244, 248, 250);margin-bottom: 10px;">
-						<div><i class="icon-notification"></i> Release date: 08/07/2014 </div>
+						<div><i class="icon-notification"></i> <?php echo $lang['DOWNLOADN_RELEASE_1.3']; ?> </div>
 					</div>
 					<p class="alert alert-success fade in text-center">
-                        If you have any question regarding this version or want to report a bug click <a href="bugreport.php">here</a> to send us a message.
+                        <?php echo $lang['DOWNLOADN_QUESTIONS1']; ?><a href="bugreport.php"> <?php echo $lang['DOWNLOADN_QUESTIONS2']; ?> </a> <?php echo $lang['DOWNLOADN_QUESTIONS3']; ?>
 					</p>
 					
 					
@@ -533,23 +536,23 @@ $(window).resize(function(){
 				<div class="panel-group block2">
 				<div class="panel panel-default" style="border: 1px solid rgb(178, 26, 26);">
                   <div class="panel-heading"  style="background-color: rgb(236, 200, 200);">
-                    <h6 class="panel-title panel-trigger"><a data-toggle="collapse" href="#old11" class="collapsed">Version: 1.2</a></h6>
+                    <h6 class="panel-title panel-trigger"><a data-toggle="collapse" href="#old11" class="collapsed"><?php echo $lang['DOWNLOADN_VERSION']; ?> 1.2</a></h6>
                   </div>
                   <div id="old11" class="panel-collapse collapse" style="height: 0px;">
 													<div class="panel-group" id="accordion-color" style="max-width: 675px;float: left;width: 100%;margin-botton:9px">
 						  <div class="tabbable">
 							<ul class="nav nav-tabs">
-							  <li class="active"><a href="#iconified-tab1-c11" data-toggle="tab"><i class="icon-code"></i> Changelog</a></li>
-							  <li><a href="#iconified-tab2-c11" data-toggle="tab"><i class="icon-notification"></i> Known Issues</a></li>
+							  <li class="active"><a href="#iconified-tab1-c11" data-toggle="tab"><i class="icon-code"></i> <?php echo $lang['DOWNLOADN_CHANGELOG']; ?></a></li>
+							  <li><a href="#iconified-tab2-c11" data-toggle="tab"><i class="icon-notification"></i> <?php echo $lang['DOWNLOADN_KNOWN_ISSUES']; ?></a></li>
 							</ul>
 							<div class="tab-content with-padding">
 							  <div class="tab-pane fade in active" id="iconified-tab1-c11">
 								  <ul>
-									 <li>Update for new patch.</li>
-									  <li>GetPrediction bug fixed, return now always a pos.</li>
-									  <li>Collision bug solved(I hope).</li>
-									  <li>intern code change.</li>
-									  <li>Dynamic packet header changer.</li>
+									 <li><?php echo $lang['DOWNLOADN_O_LINE1_1.2']; ?></li>
+									  <li><?php echo $lang['DOWNLOADN_O_LINE2_1.2']; ?></li>
+									  <li><?php echo $lang['DOWNLOADN_O_LINE3_1.2']; ?></li>
+									  <li><?php echo $lang['DOWNLOADN_O_LINE4_1.2']; ?></li>
+									  <li><?php echo $lang['DOWNLOADN_O_LINE5_1.2']; ?></li>
 									</ul>
 							  </div>
 							  <div class="tab-pane fade" id="iconified-tab2-c11">
@@ -561,15 +564,15 @@ $(window).resize(function(){
 
 
 					<div class="" style="padding: 16px 0px 19px 11px;float:right;width: 170px;margin: 19px 13px 0px 0px;border-left: 1px solid rgb(223, 223, 223);">
-								<a target="_blank"  href="https://bitbucket.org/Klokje/public-klokjes-bol-scripts/raw/aef4be4e92a5b1ba70154752c49e4978e7178dd4/Test/Prodiction/Prodiction.lua" style="height: 45px;float: right;width: 100%;margin-bottom: 3px;" type="button" class="btn btn-success"><i class="icon-file-download"></i> Download</a>
+								<a target="_blank"  href="https://bitbucket.org/Klokje/public-klokjes-bol-scripts/raw/aef4be4e92a5b1ba70154752c49e4978e7178dd4/Test/Prodiction/Prodiction.lua" style="height: 45px;float: right;width: 100%;margin-bottom: 3px;" type="button" class="btn btn-success"><i class="icon-file-download"></i> <?php echo $lang['DOWNLOADN_DOWNLOAD']; ?></a>
 
 						</div>
 						<div class="" style="padding-left: 10px!important;margin-bottom: 12px;float:left;width: 100%;margin-top: 9px;padding-right: 10px;border-top: 1px solid rgb(221, 221, 221);padding-top: 12px;">
                     <div style="text-align: center;padding: 10px;background-color: rgb(244, 248, 250);margin-bottom: 10px;">
-						<div><i class="icon-notification"></i> Release date: 07/07/2014 </div>
+						<div><i class="icon-notification"></i> <?php echo $lang['DOWNLOADN_RELEASE_1.2']; ?> </div>
 					</div>
 					<p class="alert alert-success fade in text-center">
-                        If you have any question regarding this version or want to report a bug click <a href="bugreport.php">here</a> to send us a message.
+                        <?php echo $lang['DOWNLOADN_QUESTIONS1']; ?><a href="bugreport.php"> <?php echo $lang['DOWNLOADN_QUESTIONS2']; ?> </a> <?php echo $lang['DOWNLOADN_QUESTIONS3']; ?>
 					</p>
 					
 					
@@ -583,26 +586,26 @@ $(window).resize(function(){
 				<div class="panel-group block2">
 				<div class="panel panel-default" style="border: 1px solid rgb(178, 26, 26);">
                   <div class="panel-heading"  style="background-color: rgb(236, 200, 200);">
-                    <h6 class="panel-title panel-trigger"><a data-toggle="collapse" href="#old11" class="collapsed">Version: 1.1a</a></h6>
+                    <h6 class="panel-title panel-trigger"><a data-toggle="collapse" href="#old11" class="collapsed"><?php echo $lang['DOWNLOADN_VERSION']; ?> 1.1a</a></h6>
                   </div>
                   <div id="old11" class="panel-collapse collapse" style="height: 0px;">
 												<div class="panel-group" id="accordion-color" style="max-width: 675px;float: left;width: 100%;">
 						  <div class="tabbable">
 							<ul class="nav nav-tabs">
-							  <li class="active"><a href="#iconified-tab1-c41" data-toggle="tab"><i class="icon-code"></i> Changelog</a></li>
-							  <li><a href="#iconified-tab2-c41" data-toggle="tab"><i class="icon-notification"></i> Known Issues</a></li>
+							  <li class="active"><a href="#iconified-tab1-c41" data-toggle="tab"><i class="icon-code"></i> <?php echo $lang['DOWNLOADN_CHANGELOG']; ?></a></li>
+							  <li><a href="#iconified-tab2-c41" data-toggle="tab"><i class="icon-notification"></i> <?php echo $lang['DOWNLOADN_KNOWN_ISSUES']; ?></a></li>
 							</ul>
 							<div class="tab-content with-padding">
 							  <div class="tab-pane fade in active" id="iconified-tab1-c41">
-								Bug fixed, Updated free one aswell
+								<?php echo $lang['DOWNLOAD_O_LINE1_1.1a']; ?>
 								 <ul>
-								  <li>Fixed prediction wall bug.</li>
-								  <li>Fixed the NaN error</li>
-								  <li>Change Algoritm 1 a bit. Will be more 1.0 version again.</li>
+								  <li><?php echo $lang['DOWNLOAD_O_LINE2_1.1a']; ?></li>
+								  <li><?php echo $lang['DOWNLOAD_O_LINE3_1.1a']; ?></li>
+								  <li><?php echo $lang['DOWNLOAD_O_LINE4_1.1a']; ?></li>
 								</ul>
 							  </div>
 							  <div class="tab-pane fade" id="iconified-tab2-c41">
-							   No Known Issues jet.
+							   <?php echo $lang['DOWNLOADN_O_NO_ISSUES']; ?>
 							  </div>
 							</div>
 						  </div>
@@ -610,17 +613,17 @@ $(window).resize(function(){
 
 
 					<div class="" style="padding: 16px 0px 19px 11px;float:right;width: 170px;margin: 19px 13px 0px 0px;border-left: 1px solid rgb(223, 223, 223);">
-							<a target="_blank" href="https://bitbucket.org/Klokje/public-klokjes-bol-scripts/raw/b3d142897814a97973071c0a26aab5bb63d6d014/Test/Prodiction/Prodiction.lua" style="height: 45px;float: right;width: 100%;margin-bottom: 3px;" type="button" class="btn btn-success"><i class="icon-file-download"></i> Download</a>
-							<br><a href="bugreport.php" style="height: 34px;float: right;width: 100%;" type="button" class="btn btn-danger"><i class="icon-notification"></i> Report bug</a>
+							<a target="_blank" href="https://bitbucket.org/Klokje/public-klokjes-bol-scripts/raw/b3d142897814a97973071c0a26aab5bb63d6d014/Test/Prodiction/Prodiction.lua" style="height: 45px;float: right;width: 100%;margin-bottom: 3px;" type="button" class="btn btn-success"><i class="icon-file-download"></i> <?php echo $lang['DOWNLOADN_DOWNLOAD']; ?></a>
+							<br><a href="bugreport.php" style="height: 34px;float: right;width: 100%;" type="button" class="btn btn-danger"><i class="icon-notification"></i> <?php echo $lang['DOWNLOADN_REPORT_BUG']; ?></a>
 					</div>
 
 
                     <div class="" style="padding-left: 10px!important;margin-bottom: 12px;float:left;width: 100%;margin-top: 9px;padding-right: 10px;border-top: 1px solid rgb(221, 221, 221);padding-top: 12px;">
                     <div style="text-align: center;padding: 10px;background-color: rgb(244, 248, 250);margin-bottom: 10px;">
-						<div><i class="icon-notification"></i> Release date: 16/06/2014 </div>
+						<div><i class="icon-notification"></i> <?php echo $lang['DOWNLOAD_RELEASE_1.1a']; ?> </div>
 					</div>
 					<p class="alert alert-success fade in text-center">
-                        If you have any question regarding this version or want to report a bug click <a href="bugreport.php">here</a> to send us a message.
+                        <?php echo $lang['DOWNLOADN_QUESTIONS1']; ?><a href="bugreport.php"> <?php echo $lang['DOWNLOADN_QUESTIONS2']; ?> </a> <?php echo $lang['DOWNLOADN_QUESTIONS3']; ?>
 					</p>
 					
 					
@@ -634,26 +637,26 @@ $(window).resize(function(){
 				<div class="panel-group block2">
 				<div class="panel panel-default" style="border: 1px solid rgb(178, 26, 26);">
                   <div class="panel-heading"  style="background-color: rgb(236, 200, 200);">
-                    <h6 class="panel-title panel-trigger"><a data-toggle="collapse" href="#old11" class="collapsed">Version: 1.1</a></h6>
+                    <h6 class="panel-title panel-trigger"><a data-toggle="collapse" href="#old11" class="collapsed"><?php echo $lang['DOWNLOADN_VERSION']; ?> 1.1</a></h6>
                   </div>
                   <div id="old11" class="panel-collapse collapse" style="height: 0px;">
 												<div class="panel-group" id="accordion-color" style="max-width: 675px;float: left;width: 100%;">
 						  <div class="tabbable">
 							<ul class="nav nav-tabs">
-							  <li class="active"><a href="#iconified-tab1-c41" data-toggle="tab"><i class="icon-code"></i> Changelog</a></li>
-							  <li><a href="#iconified-tab2-c41" data-toggle="tab"><i class="icon-notification"></i> Known Issues</a></li>
+							  <li class="active"><a href="#iconified-tab1-c41" data-toggle="tab"><i class="icon-code"></i> <?php echo $lang['DOWNLOADN_CHANGELOG']; ?></a></li>
+							  <li><a href="#iconified-tab2-c41" data-toggle="tab"><i class="icon-notification"></i> <?php echo $lang['DOWNLOADN_KNOWN_ISSUES']; ?></a></li>
 							</ul>
 							<div class="tab-content with-padding">
 							  <div class="tab-pane fade in active" id="iconified-tab1-c41">
 								<ul>
-								  <li>Same release as for free versions. See Stable versions for more info.</li>
-								  <li>Extra Donators Api</li>
-								  <li>3 Algoritms.</li>
-								  <li>Finetune mode, to improve overtime.</li>
+								  <li><?php echo $lang['DOWNLOADN_O_LINE1_1.1']; ?></li>
+								  <li><?php echo $lang['DOWNLOADN_O_LINE2_1.1']; ?></li>
+								  <li><?php echo $lang['DOWNLOADN_O_LINE3_1.1']; ?></li>
+								  <li><?php echo $lang['DOWNLOADN_O_LINE4_1.1']; ?></li>
 								</ul>
 							  </div>
 							  <div class="tab-pane fade" id="iconified-tab2-c41">
-							   No Known Issues jet.
+							   <?php echo $lang['DOWNLOADN_O_NO_ISSUES']; ?>
 							  </div>
 							</div>
 						  </div>
@@ -661,17 +664,17 @@ $(window).resize(function(){
 
 
 					<div class="" style="padding: 16px 0px 19px 11px;float:right;width: 170px;margin: 19px 13px 0px 0px;border-left: 1px solid rgb(223, 223, 223);">
-							<a target="_blank" href="https://bitbucket.org/Klokje/public-klokjes-bol-scripts/raw/1467bf108b116274f8763693b00b7d977faf7735/Test/Prodiction/Prodiction.lua" style="height: 45px;float: right;width: 100%;margin-bottom: 3px;" type="button" class="btn btn-success"><i class="icon-file-download"></i> Download</a>
-							<br><a href="bugreport.php" style="height: 34px;float: right;width: 100%;" type="button" class="btn btn-danger"><i class="icon-notification"></i> Report bug</a>
+							<a target="_blank" href="https://bitbucket.org/Klokje/public-klokjes-bol-scripts/raw/1467bf108b116274f8763693b00b7d977faf7735/Test/Prodiction/Prodiction.lua" style="height: 45px;float: right;width: 100%;margin-bottom: 3px;" type="button" class="btn btn-success"><i class="icon-file-download"></i> <?php echo $lang['DOWNLOADN_DOWNLOAD']; ?></a>
+							<br><a href="bugreport.php" style="height: 34px;float: right;width: 100%;" type="button" class="btn btn-danger"><i class="icon-notification"></i> <?php echo $lang['DOWNLOADN_REPORT_BUG']; ?></a>
 					</div>
 
 
                     <div class="" style="padding-left: 10px!important;margin-bottom: 12px;float:left;width: 100%;margin-top: 9px;padding-right: 10px;border-top: 1px solid rgb(221, 221, 221);padding-top: 12px;">
                     <div style="text-align: center;padding: 10px;background-color: rgb(244, 248, 250);margin-bottom: 10px;">
-						<div><i class="icon-notification"></i> Release date: 16/06/2014 </div>
+						<div><i class="icon-notification"></i> <?php echo $lang['DOWNLOADN_RELEASE_1.1']; ?> </div>
 					</div>
 					<p class="alert alert-success fade in text-center">
-                        If you have any question regarding this version or want to report a bug click <a href="bugreport.php">here</a> to send us a message.
+                        <?php echo $lang['DOWNLOADN_QUESTIONS1']; ?><a href="bugreport.php"> <?php echo $lang['DOWNLOADN_QUESTIONS2']; ?> </a> <?php echo $lang['DOWNLOADN_QUESTIONS3']; ?>
 					</p>
 					
 					
@@ -686,30 +689,30 @@ $(window).resize(function(){
 				<div class="panel-group block2">
 				<div class="panel panel-default" style="border: 1px solid rgb(178, 26, 26);">
                   <div class="panel-heading"  style="background-color: rgb(236, 200, 200);">
-                    <h6 class="panel-title panel-trigger"><a data-toggle="collapse" href="#old1" class="collapsed">Version: 1.0 Nighty</a></h6>
+                    <h6 class="panel-title panel-trigger"><a data-toggle="collapse" href="#old1" class="collapsed"><?php echo $lang['DOWNLOADN_VERSION']; ?> 1.0 Nighty</a></h6>
                   </div>
                   <div id="old1" class="panel-collapse collapse" style="height: 0px;">
 													<div class="panel-group" id="accordion-color" style="max-width: 675px;float: left;width: 100%;">
 						  <div class="tabbable">
 							<ul class="nav nav-tabs">
-							  <li class="active"><a href="#iconified-tab1-c" data-toggle="tab"><i class="icon-code"></i> Changelog</a></li>
-							  <li><a href="#iconified-tab2-c" data-toggle="tab"><i class="icon-notification"></i> Known Issues</a></li>
+							  <li class="active"><a href="#iconified-tab1-c" data-toggle="tab"><i class="icon-code"></i> <?php echo $lang['DOWNLOADN_CHANGELOG']; ?></a></li>
+							  <li><a href="#iconified-tab2-c" data-toggle="tab"><i class="icon-notification"></i> <?php echo $lang['DOWNLOADN_KNOWN_ISSUES']; ?></a></li>
 							</ul>
 							<div class="tab-content with-padding">
 							  <div class="tab-pane fade in active" id="iconified-tab1-c">
 								<ul>
-								  <li>Rewrote all the code.</li>
-								  <li>Added 2 algorithms.</li>
-								  <li>Added new Class 'Prodiction'. It should make the api usage as easy as possible.</li>
-								  <li>Fixed the bug for close range less casting, should be as fast as long range</li>
-								  <li>This algorithm is not based anymore on OnNewWaypoint event. Instead it will always calculate the position. Should be much faster.</li>
-								  <li>Better documentation (this website).</li>
-								  <li>Added Wall controll.</li>
-								  <li>Added Collision.</li>
+								  <li><?php echo $lang['DOWNLOADN_O_LINE1_1.0']; ?></li>
+								  <li><?php echo $lang['DOWNLOADN_O_LINE2_1.0']; ?></li>
+								  <li><?php echo $lang['DOWNLOADN_O_LINE3_1.0']; ?></li>
+								  <li><?php echo $lang['DOWNLOADN_O_LINE4_1.0']; ?></li>
+								  <li><?php echo $lang['DOWNLOADN_O_LINE5_1.0']; ?></li>
+								  <li><?php echo $lang['DOWNLOADN_O_LINE6_1.0']; ?></li>
+								  <li><?php echo $lang['DOWNLOADN_O_LINE7_1.0']; ?></li>
+								  <li><?php echo $lang['DOWNLOADN_O_LINE8_1.0']; ?></li>
 								</ul>
 							  </div>
 							  <div class="tab-pane fade" id="iconified-tab2-c">
-							   No Known Issues jet.
+							   <?php echo $lang['DOWNLOADN_O_NO_ISSUES']; ?>
 							  </div>
 							</div>
 						  </div>
@@ -717,17 +720,17 @@ $(window).resize(function(){
 
 
 					<div class="" style="padding: 16px 0px 19px 11px;float:right;width: 170px;margin: 19px 13px 0px 0px;border-left: 1px solid rgb(223, 223, 223);">
-							<a target="_blank" href="https://bitbucket.org/Klokje/public-klokjes-bol-scripts/raw/7f8427d943e993667acd4a51a39cf9aa2b71f222/Test/Prodiction/Prodiction.lua" style="height: 45px;float: right;width: 100%;margin-bottom: 3px;" type="button" class="btn btn-success"><i class="icon-file-download"></i> Download</a>
-							<br><a href="bugreport.php" style="height: 34px;float: right;width: 100%;" type="button" class="btn btn-danger"><i class="icon-notification"></i> Report bug</a>
+							<a target="_blank" href="https://bitbucket.org/Klokje/public-klokjes-bol-scripts/raw/7f8427d943e993667acd4a51a39cf9aa2b71f222/Test/Prodiction/Prodiction.lua" style="height: 45px;float: right;width: 100%;margin-bottom: 3px;" type="button" class="btn btn-success"><i class="icon-file-download"></i> <?php echo $lang['DOWNLOADN_DOWNLOAD']; ?></a>
+							<br><a href="bugreport.php" style="height: 34px;float: right;width: 100%;" type="button" class="btn btn-danger"><i class="icon-notification"></i> <?php echo $lang['DOWNLOADN_REPORT_BUG']; ?></a>
 					</div>
 
 
                     <div class="" style="padding-left: 10px!important;margin-bottom: 12px;float:left;width: 100%;margin-top: 9px;padding-right: 10px;border-top: 1px solid rgb(221, 221, 221);padding-top: 12px;">
                     <div style="text-align: center;padding: 10px;background-color: rgb(244, 248, 250);margin-bottom: 10px;">
-						<div><i class="icon-notification"></i> Release date: 01/06/2014 </div>
+						<div><i class="icon-notification"></i> <?php echo $lang['DOWNLOADN_RELEASE_1.0']; ?></div>
 					</div>
 					<p class="alert alert-success fade in text-center">
-                        If you have any question regarding this version or want to report a bug click <a href="bugreport.php">here</a> to send us a message.
+                        <?php echo $lang['DOWNLOADN_QUESTIONS1']; ?><a href="bugreport.php"> <?php echo $lang['DOWNLOADN_QUESTIONS2']; ?> </a> <?php echo $lang['DOWNLOADN_QUESTIONS3']; ?>
 					</p>
 					
 					

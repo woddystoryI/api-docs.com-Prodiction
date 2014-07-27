@@ -33,10 +33,6 @@ switch ($lang) {
   $lang_file = 'lang.pt.php';
   break;
 	
-  case 'de':
-  $lang_file = 'lang.de.php';
-  break;
-  
   case 'cn':
   $lang_file = 'lang.cn.php';
   break;

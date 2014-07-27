@@ -374,10 +374,13 @@ $(window).resize(function(){
             <a href="#" class="dropdown-toggle" data-toggle="dropdown"><img src="images/flags/english.png" alt=""> <span>English</span> <b class="caret"></b></a>
             <ul class="dropdown-menu dropdown-menu-right icons-right">
               
-              <li class="active"><a href="#"><img src="images/flags/english.png" alt=""> English</a></li>
-              <li class="disabled"><a href="#"><img src="images/flags/german.png" alt=""> German</a></li>
+              <li class="active"><a href="page5.php?lang=en"><img src="images/flags/english.png" alt=""> English</a></li>
+              <li class="active"><a href="page5.php?lang=pt"><img src="images/flags/portuguese.png" alt=""> Portuguese</a></li>
+			  			  
+			  <li class="disabled"><a href="page5.php?lang=ko"><img src="images/flags/korean.png" alt=""> Korean</a></li>
+			  <li class="disabled"><a href="page5.php?lang=cn"><img src="images/flags/china.png" alt=""> Chinese</a></li>
+			  <li class="disabled"><a href="#"><img src="images/flags/german.png" alt=""> German</a></li>
               <li class="disabled"><a href="#"><img src="images/flags/dutch.png" alt=""> Dutch</a></li>
-              <li class="disabled"><a href="#"><img src="images/flags/china.png" alt=""> Chinese</a></li>
             </ul>
           </li>
 
